@@ -718,3 +718,87 @@ a:not([class]) {
   line-height: 2.1875;
   font-weight: 400;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.popup {
+  position: relative;
+  top: 50%;
+  line-height: 2.1875;
+}
+
+.popup-download {
+  position: absolute;
+  text-align: center;
+  padding: 255px 0 90px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.popup-download::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: #ffffff url("../template/img/symu2.png") no-repeat;
+  background-position: center;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+.popup-download__tittle {
+  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #d62c40;
+  margin-bottom: 35px;
+}
+.popup-download__text {
+  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #b9bcd1;
+  margin-bottom: 85px;
+}
+.popup-download__button {
+  margin: 0 auto;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 32px 61px;
+  color: #ffffff;
+}
+.popup-download__button_color-red {
+  background-color: #eb304d;
+}
+
+@media (max-width: 992px) {
+  .popup {
+    line-height: 1.5;
+  }
+}
+@media (max-width: 768px) {
+  .popup {
+    line-height: 1.2;
+  }
+}
+@media (max-width: 576px) {
+  .popup-download::before {
+    width: 250px;
+    height: 250px;
+    top: 10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
