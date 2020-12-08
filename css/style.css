@@ -719,19 +719,19 @@ a:not([class]) {
   font-weight: 400;
 }
 
-.page {
-  width: 2000px;
-}
-.page__overlay {
+.overlay {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.85);
 }
 
 .popup {
   position: relative;
-  margin-top: 50vh;
+  top: 50%;
+  line-height: 2.1875;
 }
 
 .popup-download {
