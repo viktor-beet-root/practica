@@ -1031,3 +1031,13 @@ a:not([class]) {
   animation: moveInButton 0.5s ease-out 0.2s;
   animation-fill-mode: backwards;
 }
+
+.latest-works__title {
+  margin-bottom: 65px;
+}
+.latest-works__image {
+  max-width: 100%;
+}
+.latest-works__image-wrapper {
+  text-align: center;
+}
