@@ -18,13 +18,11 @@
         display: inline-block;
     }
 
-
         &__icon {
             position: relative;
             margin-top: 10px;
             z-index: 100;
 
-    
             &,
             &::before,
             &::after {
