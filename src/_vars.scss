@@ -9,3 +9,14 @@ $default-line-height: 2.1875;
 $secondary-fonts-name: "montserrat";
 $secondary-fonts: $secondary-fonts-name, $follbak;
 //Color
+$dodgerBlue: #3686fe;
+$chathamsBlue: #194177;
+$scorpion: #5a5a5a;
+$white: #fff;
+
+$closeBtnLineColor: $dodgerBlue;
+$closeBtnHover: $chathamsBlue;
+$colorPlaceholder: $scorpion;
+$textColorWhite: $white;
+
+$defaultBoxShadow: 0 0 2px 1px rgba(0, 0, 0, .35);

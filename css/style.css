@@ -718,3 +718,145 @@ a:not([class]) {
   line-height: 2.1875;
   font-weight: 400;
 }
+
+.wrapp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.hireMePop__wrapp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hireMePop {
+  margin: 102px auto 0;
+  padding: 20px;
+  max-width: 812px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.hireMePop,
+.hireMePop .contact-input,
+.hireMePop .contact-message {
+  border-radius: 10px;
+  border: 1px solid #b7c0c9;
+}
+.hireMePop__close-btn {
+  margin: 0;
+  width: 23px;
+  height: 23px;
+  display: block;
+  position: relative;
+  align-self: flex-end;
+}
+.hireMePop__close-btn::before, .hireMePop__close-btn::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 28px;
+  margin: 0;
+  background-color: #3686fe;
+  position: absolute;
+  top: -2px;
+  left: 11px;
+}
+.hireMePop__close-btn::before {
+  transform: rotate(45deg);
+}
+.hireMePop__close-btn::after {
+  transform: rotate(-45deg);
+}
+.hireMePop__close-btn:hover::before, .hireMePop__close-btn:hover::after {
+  background-color: #194177;
+}
+.hireMePop__close-btn:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.35);
+}
+.hireMePop__title,
+.hireMePop .contact-input,
+.hireMePop .contact-message, .hireMePop__btn, .hireMePop__btn-text {
+  align-self: center;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+.hireMePop__title {
+  font-size: 50px;
+  line-height: 1.5;
+  color: #3686fe;
+  margin-bottom: 39px;
+}
+.hireMePop__btn {
+  padding: 12px 0px;
+  width: 204px;
+  border-radius: 27px;
+  background-image: linear-gradient(51deg, #3595ff 0%, #3564fc 100%);
+  border: none;
+  margin-bottom: 40px;
+}
+.hireMePop__btn-text {
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.hireMePop__btn:active, .hireMePop__btn:focus, .hireMePop__btn:hover {
+  outline: none;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.35);
+}
+
+.iput-wrapp {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.contact-input,
+.contact-message {
+  width: 100%;
+  padding: 13px 20px;
+}
+
+.contact-message::placeholder,
+.contact-input::placeholder {
+  color: #5a5a5a;
+}
+
+.contact-input {
+  margin-bottom: 15px;
+}
+
+.contact-message {
+  height: 180px;
+  margin-bottom: 44px;
+}
+
+.contact-input:active,
+.contact-input:focus,
+.contact-input:hover,
+.contact-message:active,
+.contact-message:focus,
+.contact-message:hover {
+  border-color: #3686fe;
+  outline: none;
+  outline-offset: 0;
+}
+
+@media (max-width: 576px) {
+  .hireMePop__title {
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .hireMePop {
+    margin: 30px auto 0;
+  }
+}
