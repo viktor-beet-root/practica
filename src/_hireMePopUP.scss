@@ -1,0 +1,159 @@
+.wrapp {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0, 0, 0, .85);
+}
+
+.hireMePop__wrapp{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.hireMePop {
+    margin: 102px auto 0;
+    padding: 20px;
+    max-width: 812px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    &,
+    .contact-input,
+    .contact-message {
+    border-radius: 10px;
+    border: 1px solid #b7c0c9;
+    }
+
+    &__close-btn {
+        margin: 0;
+        width: 23px;
+        height: 23px;
+        display: block;
+        position: relative;
+        align-self: flex-end;
+
+        &::before,
+        &::after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 28px;
+        margin: 0;
+        background-color: $closeBtnLineColor;
+        position: absolute;
+        top: -2px;
+        left: 11px;
+    }
+
+        &::before {
+        transform: rotate(45deg);
+    }
+
+        &::after {
+        transform: rotate(-45deg);
+    }
+
+        &:hover::before,
+        &:hover::after {
+        background-color: $chathamsBlue;
+    }
+
+        &:hover {
+        box-shadow: $defaultBoxShadow;
+    }
+    }
+
+    &__title,
+    .contact-input,
+    .contact-message,
+    &__btn,
+    &__btn-text {
+        align-self: center;
+        font-family: $default-fonts;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 1.5;
+        color: $closeBtnLineColor;
+        margin-bottom: 39px;
+    }
+
+    &__btn{
+        padding: 12px 0px;
+        width: 204px;
+        border-radius: 27px;
+        background-image: linear-gradient(51deg, #3595ff 0%, #3564fc 100%);
+        border: none;
+        margin-bottom: 40px;
+
+        &-text{
+            line-height: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $textColorWhite;
+        }
+    }
+
+    &__btn:active,
+    &__btn:focus,
+    &__btn:hover {
+        outline: none;
+        box-shadow: $defaultBoxShadow;
+    }
+}
+
+.iput-wrapp {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contact-input,
+.contact-message {
+    width: 100%;
+    padding: 13px 20px;
+}
+
+.contact-message::placeholder,
+.contact-input::placeholder {
+    color: $scorpion;
+}
+
+.contact-input {
+    margin-bottom: 15px;
+}
+
+.contact-message {
+    height: 180px;
+    margin-bottom: 44px;
+}
+
+.contact-input:active,
+.contact-input:focus,
+.contact-input:hover,
+.contact-message:active,
+.contact-message:focus,
+.contact-message:hover {
+    border-color: $closeBtnLineColor;
+    outline: none;
+    outline-offset: 0;
+}
+
+@media (max-width: $SM ){
+    .hireMePop__title{
+        line-height: 1.1;
+        margin-bottom: 20px;
+}
+
+.hireMePop {
+    margin: 30px auto 0;
+}
+}
