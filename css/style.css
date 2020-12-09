@@ -770,42 +770,6 @@ a:not([class]) {
     padding: 51px 0 74px;
   }
 }
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff");
-}
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/lato-v17-latin-700.woff2") format("woff2"), url("../fonts/lato-v17-latin-700.woff") format("woff");
-}
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato-v17-latin-regular.woff2") format("woff2"), url("../fonts/lato-v17-latin-regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/lato-v17-latin-900.woff2") format("woff2"), url("../fonts/lato-v17-latin-900.woff") format("woff");
-}
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-700.woff") format("woff");
-}
-@font-face {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-regular.woff") format("woff");
-}
 .welcome {
   height: 100vh;
   padding: 140px 0;
@@ -1040,4 +1004,39 @@ a:not([class]) {
 }
 .latest-works__image-wrapper {
   text-align: center;
+}
+
+.title {
+  color: #3677fd;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 35.12px;
+  line-height: 65px;
+  text-align: center;
+}
+
+.clients {
+  background-color: #f1f8ff;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  line-height: 150px;
+  font-size: 30px;
+  background-image: url(../images/bg-footer.png);
+}
+
+.btn3 {
+  border-radius: 28px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #3677fd;
+  font-size: 15px;
+  background: #ffffff;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  margin-left: 20px;
 }
