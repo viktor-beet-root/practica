@@ -740,6 +740,7 @@ a:not([class]) {
 .latest-work__img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 @media (max-width: 992px) {

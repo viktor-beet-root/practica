@@ -3,25 +3,26 @@
     max-width: 1175px;
 
     &__item {
-    color: $latestItemColor;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
-    padding: 91px 0 104px;
-    display: block;
+        color: $latestItemColor;
+        font-size: 50px;
+        font-weight: 300;
+        text-align: center;
+        padding: 91px 0 104px;
+        display: block;
     }
 
     &__block {
-    display: block;
-    padding-bottom: 54px;
+        display: block;
+        padding-bottom: 54px;
     }
     &__container{
-    padding-bottom: 194px;
+        padding-bottom: 194px;
     }   
 
     &__img {
-    display: block;
-    margin: 0 auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
 }
 
