@@ -9,10 +9,20 @@ $default-line-height: 2.1875;
 $secondary-fonts-name: "montserrat";
 $secondary-fonts: $secondary-fonts-name, $follbak;
 //Color
+
 $chathamsblue: #194277;
 $white: #fff;
+$red:#d62c40;
+$grey: #b9bcd1;
+$lightRed: #eb304d;
+$white: #ffffff;
 
 $cookiecbakgcol: $chathamsblue;
 $acceptcolor: $chathamsblue;
 $acceptbakcolor: $white;
 $cookiescheccolor: $white;
+$popupTittleRed: $red;
+$popupDownloadTextColor: $grey;
+$popupDownloadButtonColor: $lightRed;
+$buttonTextColor: $white;
+$popupDownloadBgColor: $white;
