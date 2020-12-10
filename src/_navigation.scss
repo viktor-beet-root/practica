@@ -8,19 +8,19 @@
     }
 
     &__button {
-        text-align: center;
+        display: block;
         height: 20px;
         width: 26px;
         position: absolute;
-        top: -50px;
-        right: 20px;
+        top: -67px;
+        right: 15px;
         cursor: pointer;
         display: inline-block;
     }
 
         &__icon {
             position: relative;
-            margin-top: 10px;
+            margin-bottom: 15px;
             z-index: 100;
 
             &,

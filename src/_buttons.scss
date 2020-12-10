@@ -1,9 +1,12 @@
 .btn-primary {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 70px;
+    width: 205px;
+    height: 55px;
+    text-align: center;
+    padding: 10px;
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 27px;
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
@@ -25,7 +28,8 @@
     
     &--white {
         background-color: #fff;
-        color: #777;
+        font-weight: 700;
+        color: $brightBlue;
         position: relative;
 
         &::after {
