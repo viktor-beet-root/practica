@@ -1,0 +1,93 @@
+.overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0, 0, 0, .85);
+}
+
+.popup {
+    position: relative;
+    top:50%;
+    line-height: $default-line-height;
+    
+}
+
+.popup-download {
+    position: absolute;
+    text-align: center;
+    padding: 255px 0 90px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $popupDownloadBgColor;
+    border-radius: 5px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top:0;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width:360px;
+        height: 360px;
+        border-radius: 50%;
+        background:$popupDownloadBgColor url('../template/img/symu2.png') no-repeat;
+        background-position: center;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+    }
+
+    &__tittle {
+        font-family: $secondary-fonts;
+        font-size: 48px;
+        font-weight: 700;
+        color: $popupTittleRed;
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        font-family: $secondary-fonts;
+        font-size: 24px;
+        color: $popupDownloadTextColor;
+        margin-bottom: 85px;
+    }
+
+    &__button {
+        margin: 0 auto;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        font-family: $secondary-fonts;
+        font-size: 24px;
+        padding:32px 61px;
+        color: $buttonTextColor;
+        
+        &_color-red {
+            background-color: $popupDownloadButtonColor;
+        }
+    }
+}
+
+@media (max-width: $LG ){
+    .popup {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: $MD ){
+    .popup {
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: $SM ){
+    .popup-download{
+
+        &::before {
+            width:250px;
+            height:250px;
+            top:10%;
+        }
+    }
+}
