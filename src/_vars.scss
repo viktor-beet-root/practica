@@ -6,11 +6,13 @@ $default-fonts: $default-fonts-name, $follbak;
 $default-font-size: 16px;
 $default-line-height: 2.1875;
 
+
 $secondary-fonts-name: "montserrat";
 $secondary-fonts: $secondary-fonts-name, $follbak;
 //Color
 
 $brightBlue: #3677fd;
+$Alto: #d2d2d2;
 $latestItemColor:$brightBlue;
 
 $color-primary: #3677fd;
@@ -31,6 +33,11 @@ $red:#d62c40;
 $grey: #b9bcd1;
 $lightRed: #eb304d;
 $white: #ffffff;
+$dodgerBlue: #3686fe;
+$chathamsBlue: #194177;
+$scorpion: #5a5a5a;
+$white: #fff;
+
 
 $cookiecbakgcol: $chathamsblue;
 $acceptcolor: $chathamsblue;
@@ -41,14 +48,11 @@ $popupDownloadTextColor: $grey;
 $popupDownloadButtonColor: $lightRed;
 $buttonTextColor: $white;
 $popupDownloadBgColor: $white;
-$dodgerBlue: #3686fe;
-$chathamsBlue: #194177;
-$scorpion: #5a5a5a;
-$white: #fff;
-
+$colorMenuHover: $brightBlue;
 $closeBtnLineColor: $dodgerBlue;
 $closeBtnHover: $chathamsBlue;
 $colorPlaceholder: $scorpion;
 $textColorWhite: $white;
+$menuColorBg: $Alto;
 
 $defaultBoxShadow: 0 0 2px 1px rgba(0, 0, 0, .35);
