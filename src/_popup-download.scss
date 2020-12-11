@@ -1,17 +1,18 @@
-.overlay {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:rgba(0, 0, 0, .85);
-}
-
 .popup {
     position: relative;
     top:50%;
     line-height: $default-line-height;
-    
+
+    &__overlay {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background:rgba(0, 0, 0, .85);
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 .popup-download {
