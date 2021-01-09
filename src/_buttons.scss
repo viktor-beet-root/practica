@@ -1,0 +1,60 @@
+.btn-primary {
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 205px;
+    height: 55px;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 27px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(#000, .2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(#000, .2);
+    }
+    
+    &--white {
+        background-color: #fff;
+        font-weight: 700;
+        color: $brightBlue;
+        position: relative;
+
+        &::after {
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    } 
+        
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInButton .5s ease-out .2s;
+        animation-fill-mode: backwards;
+    }
+}

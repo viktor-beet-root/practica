@@ -1,0 +1,30 @@
+.footer{
+    align-items: center;
+    font-family: $default-fonts;
+    color: $footer-title-color;
+    font-size: 50px;
+    font-weight: 300;
+    background-image: url(../images/bg-footer.png);
+    letter-spacing: .5px;
+    padding: 40px;
+}
+
+.footer__row{
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info_text{
+    display: block;
+
+}
+
+.footer_light{
+white-space: nowrap;
+}
+
+.footer_bold{
+    font-weight: 700;
+    white-space: nowrap;
+}

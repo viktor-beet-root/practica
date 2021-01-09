@@ -1,0 +1,146 @@
+.welcome {
+    // height: 100vh;
+    padding: 170px 0 130px;
+    background-image: linear-gradient(51deg, #3595ff 0%, #3564fc 100%);
+
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+
+    &__text-box {
+        margin: 0 auto;
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        margin-bottom: 60px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, .15),
+                    0px 0px 0px 20px rgba(255, 255, 255, .1);
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+        font-family: $default-fonts;
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1.6px;
+    }
+
+    &__text {
+        padding: 0 40px;
+        margin-bottom: 75px;
+        font-family: $default-fonts;
+        font-size: $default-font-size;
+        line-height: $default-line-height;
+        font-weight: 300;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .4px;
+    }
+
+    &__arrow {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        opacity: .7;
+        position: absolute;
+        left: 50%;
+        bottom: 165px;
+        animation: moveArrow 2s ease-out infinite reverse forwards;
+    }
+}
+
+.about-me {
+    padding: 50px 0 95px;
+
+    &__heading {
+        margin-bottom: 20px;
+        font-family: $default-fonts;
+        font-size: 50px;
+        font-weight: 300;
+        color: $color-primary;
+        text-align: center;
+    }
+
+    &__text {
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
+//animated
+
+@keyframes moveInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes moveArrow {
+    0% {
+        opacity: .3;
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: $LG) { //992px
+    .welcome {
+        &__heading {
+            font-size: 40px;
+        }
+    }
+
+    .about-me {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: $MD) { //768px
+    .welcome {
+        &__heading {
+            font-size: 32px;
+        }
+    }
+
+    .about-me {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: $SM) {
+    .welcome {
+        &__heading {
+            font-size: 40px;
+        }
+    }
+
+    .about-me {
+        padding: 60px 0;
+    }
+}

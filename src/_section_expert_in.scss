@@ -1,0 +1,60 @@
+.container{
+    max-width: 1170px;
+}
+
+.section-expert{
+    background-color: $light-blue;
+    padding-top: 53px;
+    padding-bottom: 13px;
+}
+
+.section-expert__card{
+    padding-bottom: 10px;
+}
+
+.title{
+    font-weight: 300;
+    font-size: 50px;
+    color: $color-primary;
+    padding-bottom: 80px;
+}
+
+.card__wrapper{
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.card__item{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    border: 1px solid $loblolly;
+}
+
+.card__img{
+    @include absoluteCentering;
+}
+
+.card__title{
+    padding-top: 45px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $color-primary;
+    text-align: center;
+}
+
+.card__text{
+    color: $Scorpion;
+    padding-bottom: 66px;
+    text-align: center;
+}
+
+.section-expert__card:nth-child(3n + 2) .card__wrapper{
+    padding-left: 25px;
+    padding-right: 25px;
+}

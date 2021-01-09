@@ -2,10 +2,57 @@
 
 $default-fonts-name:"Lato";
 $follbak: Arial, Helvetica, sans-serif;
-$default-fonts: $default-fonts-name, $follbak ;
+$default-fonts: $default-fonts-name, $follbak;
 $default-font-size: 16px;
 $default-line-height: 2.1875;
+
 
 $secondary-fonts-name: "montserrat";
 $secondary-fonts: $secondary-fonts-name, $follbak;
 //Color
+
+$brightBlue: #3677fd;
+$Alto: #d2d2d2;
+$latestItemColor:$brightBlue;
+
+$color-primary: #3677fd;
+$blue: #3677fd;
+$light-blue: #f1f8ff;
+$white:#ffffff;
+$loblolly:#bcc5ce;
+$Scorpion: #5a5a5a;
+
+$title-color: $blue;
+$block-color: $light-blue;
+$footer-title-color:$white;
+
+$col-indent: 30px;
+$chathamsblue: #194277;
+$white: #fff;
+$red:#d62c40;
+$grey: #b9bcd1;
+$lightRed: #eb304d;
+$white: #ffffff;
+$dodgerBlue: #3686fe;
+$chathamsBlue: #194177;
+$scorpion: #5a5a5a;
+$white: #fff;
+
+
+$cookiecbakgcol: $chathamsblue;
+$acceptcolor: $chathamsblue;
+$acceptbakcolor: $white;
+$cookiescheccolor: $white;
+$popupTittleRed: $red;
+$popupDownloadTextColor: $grey;
+$popupDownloadButtonColor: $lightRed;
+$buttonTextColor: $white;
+$popupDownloadBgColor: $white;
+$colorMenuHover: $brightBlue;
+$closeBtnLineColor: $dodgerBlue;
+$closeBtnHover: $chathamsBlue;
+$colorPlaceholder: $scorpion;
+$textColorWhite: $white;
+$menuColorBg: $Alto;
+
+$defaultBoxShadow: 0 0 2px 1px rgba(0, 0, 0, .35);
